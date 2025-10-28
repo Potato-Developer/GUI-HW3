@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multiplication Table Generator</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Multiplication Table Generator</h1>
+
+    <form id="tableForm">
+      <div class="input-group">
+        <label for="hStart">Horizontal Start:</label>
+        <input type="number" id="hStart" name="hStart" required>
+      </div>
+      <div class="input-group">
+        <label for="hEnd">Horizontal End:</label>
+        <input type="number" id="hEnd" name="hEnd" required>
+      </div>
+      <div class="input-group">
+        <label for="vStart">Vertical Start:</label>
+        <input type="number" id="vStart" name="vStart" required>
+      </div>
+      <div class="input-group">
+        <label for="vEnd">Vertical End:</label>
+        <input type="number" id="vEnd" name="vEnd" required>
+      </div>
+
+      <button type="submit">Generate Table</button>
+    </form>
+
+    <div id="error" class="error"></div>
+
+    <div id="tableContainer" class="table-container">
+      <!-- Table will be generated here -->
+    </div>
+  </div>
+
+  <script src="js/table.js"></script>
+</body>
+</html>
